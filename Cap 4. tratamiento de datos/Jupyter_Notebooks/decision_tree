@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<worst area &le; 884.55<br/>squared_error = 0.235<br/>samples = 455<br/>value = 0.622>, fillcolor="#efb184"] ;
+1 [label=<worst concave points &le; 0.16<br/>squared_error = 0.084<br/>samples = 304<br/>value = 0.908>, fillcolor="#e78d4b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<worst concave points &le; 0.132<br/>squared_error = 0.037<br/>samples = 285<br/>value = 0.961>, fillcolor="#e68641"] ;
+1 -> 2 ;
+3 [label=<squared_error = 0.015<br/>samples = 259<br/>value = 0.985>, fillcolor="#e5833c"] ;
+2 -> 3 ;
+4 [label=<squared_error = 0.197<br/>samples = 26<br/>value = 0.731>, fillcolor="#eca36e"] ;
+2 -> 4 ;
+5 [label=<worst perimeter &le; 97.155<br/>squared_error = 0.094<br/>samples = 19<br/>value = 0.105>, fillcolor="#fcf2ea"] ;
+1 -> 5 ;
+6 [label=<squared_error = 0.222<br/>samples = 3<br/>value = 0.667>, fillcolor="#eeab7b"] ;
+5 -> 6 ;
+7 [label=<squared_error = 0.0<br/>samples = 16<br/>value = 0.0>, fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label=<mean texture &le; 14.99<br/>squared_error = 0.044<br/>samples = 151<br/>value = 0.046>, fillcolor="#fef9f6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<mean area &le; 996.55<br/>squared_error = 0.204<br/>samples = 7<br/>value = 0.714>, fillcolor="#eca572"] ;
+8 -> 9 ;
+10 [label=<squared_error = 0.0<br/>samples = 5<br/>value = 1.0>, fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label=<squared_error = 0.0<br/>samples = 2<br/>value = 0.0>, fillcolor="#ffffff"] ;
+9 -> 11 ;
+12 [label=<worst concavity &le; 0.191<br/>squared_error = 0.014<br/>samples = 144<br/>value = 0.014>, fillcolor="#fffdfc"] ;
+8 -> 12 ;
+13 [label=<squared_error = 0.222<br/>samples = 3<br/>value = 0.667>, fillcolor="#eeab7b"] ;
+12 -> 13 ;
+14 [label=<squared_error = 0.0<br/>samples = 141<br/>value = 0.0>, fillcolor="#ffffff"] ;
+12 -> 14 ;
+}
